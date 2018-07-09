@@ -1,0 +1,79 @@
+/* pages/contacts/index.wxss */
+
+.menu_item {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  border-bottom: 1rpx solid #ececec;
+}
+
+.icon {
+  width: 48rpx;
+  height: 48rpx;
+  margin: 16rpx;
+}
+
+.menu_content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-left: 24rpx;
+  align-self: center;
+  align-content: center;
+}
+
+.title {
+  font-size: 14px;
+}
+
+.tip {
+  display: flex;
+  align-content: center;
+  align-self: center;
+  justify-content: center;
+  background: #ff0000;
+  border-radius: 50%;
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 24rpx;
+  font-size: 12px;
+  color: #fff;
+}
+
+.friend_item {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  border-bottom: 1rpx solid #ececec;
+}
+
+.avatar {
+  width: 64rpx;
+  height: 64rpx;
+  margin: 16rpx;
+}
+
+.friend_content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-content: center;
+  align-self: center;
+  padding-left: 24rpx;
+}
+
+.name {
+  font-size: 14px;
+}
+
+.header {
+  display: flex;
+  height: 36rpx;
+  flex: 1;
+  flex-direction: row;
+  align-content: center;
+  align-self: center;
+  font-size: 12px;
+  padding-left: 36rpx;
+  background: #ececec;
+}

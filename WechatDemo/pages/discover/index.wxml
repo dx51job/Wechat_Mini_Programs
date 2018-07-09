@@ -1,0 +1,15 @@
+<!--pages/discover/index.wxml-->
+<view>
+  <view wx:for="{{items}}" wx:key="{{index}}" class='menu_item'>
+    <image wx:if="{{!item.header}}" class='icon' src='/assets/icons/{{item.icon}}'></image>
+    <view wx:if="{{!item.header}}" class='menu_content'>
+      <view class='title'>{{item.name}}</view>
+      <view wx:if="{{item.unread>0}}" class='tip'>{{item.unread}}</view>
+      <view class='subtitle'></view>
+      <view wx:if="{{item.community}}" class='right'>
+        <image class='right_image' src='/assets/avatars/{{item.community.avatar}}'></image>
+      </view>
+    </view>
+    <view wx:if="{{item.header}}" class='header'></view>
+  </view>
+</view>

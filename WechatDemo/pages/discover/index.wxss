@@ -1,0 +1,80 @@
+/* pages/discover/index.wxss */
+page {
+  background: #ececec;
+}
+
+.menu_item {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  border-bottom: 1rpx solid #ececec;
+}
+
+.icon {
+  width:48rpx;
+  height:48rpx;
+  margin: 10rpx;
+  align-content: center;
+  align-self: center;
+}
+
+.menu_content {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  align-content: center;
+  align-self: center;
+  padding-left: 24rpx;
+}
+
+.title {
+  font-size: 14px;
+  align-content: center;
+  align-self: center;
+  margin-right: 36rpx;
+}
+
+.subtitle {
+  display: flex;
+  flex: 1;
+  align-content: center;
+  align-self: center;
+}
+
+.right {
+  display: flex;
+  margin-right: 24rpx;
+}
+
+.right_image {
+  width: 48rpx;
+  height: 48rpx;
+  align-content: center;
+  align-self: center;
+}
+
+.tip {
+  display: flex;
+  align-content: center;
+  align-self: center;
+  justify-content: center;
+  background: #ff0000;
+  border-radius: 50%;
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 24rpx;
+  font-size: 12px;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  height: 36rpx;
+  flex: 1;
+  flex-direction: row;
+  align-content: center;
+  align-self: center;
+  font-size: 12px;
+  padding-left: 36rpx;
+  background: #ececec;
+}
