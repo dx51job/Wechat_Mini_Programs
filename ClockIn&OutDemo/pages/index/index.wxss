@@ -1,0 +1,56 @@
+/**index.wxss**/
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.checked_button {
+  width: 280rpx;
+  margin-top: 64rpx;
+}
+
+.unchecked_button {
+  width: 260rpx;
+  margin-top: 64rpx;
+  background: #0e932e;
+  color: #fff;
+}
+
+.status {
+  margin-top: 16rpx;
+}
+
+.status_item {
+  margin-bottom: 24rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.result {
+  display: flex;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 36rpx;
+  align-items: center;
+  justify-content: center;
+}

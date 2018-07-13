@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <block wx:if="{{hasUserInfo}}">
+    <view wx:if="{{isChecked}}">
+      <button class='checked_button'>已经打卡</button>
+    </view>
+    <view wx:else>
+      <button class='unchecked_button' bindtap='bindGetLocationTap'>开始打卡</button>
+    </view>
+    <view class='status'>
+      <view class='status_item'>
+        <text>距离：{{distance}}米</text>
+      </view>
+      <view class='status_item'>
+        <text>{{locationChecked?'位置已经确认':'位置尚未确认'}}</text>
+      </view>
+      <view class='status_item'>
+        <text>{{wifiChecked?'Wifi已经确认':'Wifi尚未确认'}}</text>
+      </view>
+      <view class='result'>
+        <text>{{isChecked?'已打卡':'未打卡'}}</text>
+      </view>
+    </view>
+  </block>
+  <view wx:else>
+    <text>请先登录在打卡</text>
+  </view>
+</view>
