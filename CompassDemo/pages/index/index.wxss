@@ -1,0 +1,30 @@
+/**index.wxss**/
+
+.container {
+  height: 100%;
+  color: #fff;
+}
+
+.info {
+  text-align: center;
+  font-size: 56rpx;
+  padding-top: 50rpx;
+}
+
+.info text {
+  display: block;
+}
+
+.picture {
+  width: 650rpx;
+  height: 650rpx;
+  position: absolute;
+  top: 50%;
+  margin-top: -300rpx;
+  left: 50rpx;
+}
+
+.picture image {
+  width: 100%;
+  height: 100%;
+}
