@@ -1,0 +1,13 @@
+<!--pages/wallpaperDetails/index.wxml-->
+<view wx:if='{{network_available}}' class='content'>
+  <image bindtap='previewImage' mode='widthFix' class='wallpaper_image' src='{{details.url}}'></image>
+  <text class='wallpaper_title'>{{details.title}}</text>
+  <text class='wallpaper_description'>{{details.description}}</text>
+  <text class='wallpaper_size'>图片属性: {{width}}X{{height}}</text>
+  <button bindtap='save' hidden='{{saveImgBtnHidden}}'>下载图片</button>
+  <button open-type='openSetting' bindopensetting='settingCallback' hidden='{{openSettingBtnHidden}}'>去授权</button>
+</view>
+<view class='hint' wx:else>
+  <icon type='warn' size='75'></icon>
+  <text class='hint_text'>网络连接错误，请检查网络</text>
+</view>
